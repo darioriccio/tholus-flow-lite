@@ -207,27 +207,13 @@ docs/
   screenshots/        README motion and product screenshots
 ```
 
-## What Was Reused From TholusOS
+## Origin Of The Project
 
 Tholus Flow Lite grows out of the real sensor work behind the wider TholusOS ecosystem.
 
-Rather than porting the desktop app, this project extracts the sensor-facing ideas that make sense as a small open-source web product, including:
+Rather than porting the desktop app, this project extracts the sensor-facing ideas that make sense as a small open-source web product: status and config handling, live stream parsing, count event normalization, occupancy estimation, and calibration controls.
 
-- sensor status and config shapes
-- WebSocket `json_v2` parsing rules
-- pairing assumptions
-- count event normalization
-- local occupancy estimation from directional events
-- calibration parameters already exposed by firmware
-
-The browser app itself was reimplemented specifically for the web stack, including:
-
-- browser-first sensor client
-- IndexedDB history layer
-- metrics aggregation
-- charts and export tooling
-- demo stream
-- the full interface
+The web app itself was built specifically for the browser, with a new TypeScript implementation for the sensor client, local persistence, metrics, charts, export tools, demo mode, and interface.
 
 ## Documentation
 
