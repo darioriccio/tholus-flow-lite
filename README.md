@@ -10,6 +10,10 @@ Tholus Flow Lite is a small web app for small shops, bars, pop-up venues, studio
 
 It connects directly to a single sensor over the local network, reads the existing firmware API, stores history in the browser, and turns raw doorway activity into a calm dashboard that actually feels good to use.
 
+If you want to understand the broader project and how to build the sensor hardware, start here:
+
+[theusualnext.com/en/lab/tholus-flow](https://www.theusualnext.com/en/lab/tholus-flow)
+
 ## Why This Exists
 
 Most people-counting tools are either:
@@ -42,7 +46,7 @@ Tholus Flow Lite keeps the useful part:
 - CSV export plus JSON export/import
 - Built-in demo mode for previews, screenshots, and testing
 
-## Real Screens
+## Screens
 
 ![Connect screen](./docs/screenshots/connect.png)
 
