@@ -209,7 +209,7 @@ docs/
 
 ## Origin Of The Project
 
-Tholus Flow Lite grows out of the real sensor work behind the wider TholusOS ecosystem.
+Tholus Flow Lite grows out of the real sensor work behind the wider [TholusOS](https://www.theusualnext.com/en/tholusos-media-server-for-immersive-experiences-the-usual-next) ecosystem.
 
 Rather than porting the desktop app, this project extracts the sensor-facing ideas that make sense as a small open-source web product: status and config handling, live stream parsing, count event normalization, occupancy estimation, and calibration controls.
 
