@@ -192,6 +192,8 @@ This is a browser app, so the sensor firmware must support browser networking ru
 
 If you are using the matching firmware from the wider Tholus project, see [API_INTEGRATION.md](./API_INTEGRATION.md) for the exact request and message assumptions.
 
+If you are building the sensor with an ESP32 and VL53L8CH, the firmware available from [theusualnext.com/en/lab/tholus-flow](https://www.theusualnext.com/en/lab/tholus-flow) is already the right starting point for Tholus Flow Lite.
+
 ## Project Layout
 
 ```text
