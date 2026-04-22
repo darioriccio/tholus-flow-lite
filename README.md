@@ -209,9 +209,9 @@ docs/
 
 ## What Was Reused From TholusOS
 
-This project intentionally reuses generic ideas from the wider TholusOS sensor stack, not private desktop internals.
+Tholus Flow Lite grows out of the real sensor work behind the wider TholusOS ecosystem.
 
-Concepts ported from the macOS codebase:
+Rather than porting the desktop app, this project extracts the sensor-facing ideas that make sense as a small open-source web product, including:
 
 - sensor status and config shapes
 - WebSocket `json_v2` parsing rules
@@ -220,14 +220,14 @@ Concepts ported from the macOS codebase:
 - local occupancy estimation from directional events
 - calibration parameters already exposed by firmware
 
-Reimplemented cleanly in TypeScript:
+The browser app itself was reimplemented specifically for the web stack, including:
 
 - browser-first sensor client
 - IndexedDB history layer
 - metrics aggregation
 - charts and export tooling
 - demo stream
-- full interface layer
+- the full interface
 
 ## Documentation
 
