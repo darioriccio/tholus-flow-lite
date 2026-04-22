@@ -52,17 +52,17 @@ Tholus Flow Lite keeps the useful part:
 
 ## Designed To Feel Like A Product
 
-This repo intentionally keeps the scope tight, but not the polish.
+This repo keeps the scope intentionally small, but aims to feel polished from day one.
 
-The browser UI ports the visual language developed in the Tholus Flow design explorations:
+The interface draws from the Tholus Flow design explorations, with:
 
-- warm paper-like neutrals
+- warm, paper-like neutrals
 - Geist typography
-- restrained card geometry
+- restrained card layouts
 - a dark sensor stage for the live radar
 - signal-green accents and subtle motion
 
-The result is meant to feel premium, playful, and maker-friendly without turning into a bloated analytics suite.
+The goal is to make entrance analytics feel premium, playful, and maker-friendly without turning into a bloated analytics suite.
 
 ## Who It's For
 
@@ -94,9 +94,39 @@ More detail lives in [API_INTEGRATION.md](./API_INTEGRATION.md).
 
 ## Quick Start
 
+You need:
+
+- Node.js 20+ and npm
+- a local copy of this repository
+
+Clone the repo:
+
+```bash
+git clone https://github.com/darioriccio/tholus-flow-lite.git
+```
+
+Enter the project folder:
+
+```bash
+cd tholus-flow-lite
+```
+
+Install dependencies:
+
 ```bash
 npm install
+```
+
+Start the app locally:
+
+```bash
 npm run dev
+```
+
+Open the local URL shown in the terminal. It is usually:
+
+```text
+http://localhost:5173
 ```
 
 For LAN testing from another device:
@@ -105,10 +135,23 @@ For LAN testing from another device:
 npm run dev:host
 ```
 
+Then open the local IP shown by Vite from another device on the same network.
+
 Production build:
 
 ```bash
 npm run build
+```
+
+This creates a production-ready static build in:
+
+```text
+dist/
+```
+
+Preview the production build locally:
+
+```bash
 npm run preview
 ```
 
@@ -117,6 +160,8 @@ Release check:
 ```bash
 npm run check
 ```
+
+`npm run check` runs linting and then builds the app, so it is a good final sanity check before publishing.
 
 ## Demo Mode
 
