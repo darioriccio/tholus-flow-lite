@@ -10,7 +10,7 @@ Tholus Flow Lite is a small web app for small shops, bars, pop-up venues, studio
 
 It connects directly to a single sensor over the local network, reads the existing firmware API, stores history in the browser, and turns raw doorway activity into a calm dashboard that actually feels good to use.
 
-The sensor used with Tholus Flow Lite was designed by [Dario Riccio](https://darioriccio.com) for the [Tholus Dome](https://tholusdome.com) domes by [the usual neXt](https://theusualnext.com).
+The sensor used with Tholus Flow Lite was designed by [Dario Riccio](https://darioriccio.com) for the [Tholus Dome](https://www.tholusdome.com/en) domes by [the usual neXt](https://www.theusualnext.com/en).
 
 If you want to understand the broader project, learn how to build the hardware, or download the sensor firmware that works with Tholus Flow Lite, start here:
 
@@ -257,7 +257,7 @@ Possible next steps:
 
 Tholus Flow Lite comes from the wider work around spatial interfaces, sensing, and interactive systems at **the usual next**.
 
-If you like the tone of this project and want to see the broader studio practice, visit [theusualnext.com](https://theusualnext.com).
+If you like the tone of this project and want to see the broader studio practice, visit [theusualnext.com](https://www.theusualnext.com/en).
 
 ## License
 
