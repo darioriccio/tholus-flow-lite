@@ -181,14 +181,6 @@ Demo mode simulates:
 - diagnostics
 - changing confidence and activity levels
 
-That makes it useful for:
-
-- GitHub screenshots
-- UI reviews
-- calibration previews
-- export flow checks
-- design demos without an ESP32 on the desk
-
 ## Firmware Notes
 
 This is a browser app, so the sensor firmware must support browser networking rules:
