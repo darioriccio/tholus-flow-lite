@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #fbf7ee;
+  --paper-strong: #fffdf8;
+  --paper-muted: #f3ebda;
+  --paper-panel: rgba(255, 252, 245, 0.72);
+  --ink: #142018;
+  --ink-soft: #4e6356;
+  --ink-faint: #7f9187;
+  --line: rgba(24, 32, 24, 0.1);
+  --line-strong: rgba(24, 32, 24, 0.18);
+  --signal: #39d887;
+  --signal-soft: rgba(57, 216, 135, 0.16);
+  --signal-strong: #1c7a54;
+  --danger: #cc6b4f;
+  --danger-soft: rgba(204, 107, 79, 0.14);
+  --shadow-soft: 0 18px 45px rgba(24, 33, 28, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-grid {
+  background-image:
+    linear-gradient(to right, rgba(24, 32, 24, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 32, 24, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black 25%, transparent 88%);
+}
+
+.panel {
+  @apply rounded-[28px] border border-[color:var(--line)] bg-[color:var(--paper-panel)] backdrop-blur-xl shadow-panel;
+}
+
+.panel-dark {
+  background:
+    radial-gradient(circle at top right, rgba(57, 216, 135, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(18, 28, 22, 0.96), rgba(12, 18, 15, 0.98));
+  color: #eff8f1;
+}
+
+.eyebrow {
+  @apply text-[11px] uppercase tracking-[0.26em];
+  color: var(--ink-faint);
+  font-family: 'Geist Mono', ui-monospace, monospace;
+}
+
+.mono {
+  font-family: 'Geist Mono', ui-monospace, monospace;
+}
+
+.metric-reactive {
+  animation: pop-in 340ms ease;
+}
+
+.grid-pulse {
+  animation: pulse-ring 850ms ease-out;
+}
+
+@keyframes pulse-ring {
+  from {
+    transform: scale(0.92);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.96);
+  }
+  45% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 32, 24, 0.12);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

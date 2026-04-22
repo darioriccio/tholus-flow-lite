@@ -1,0 +1,61 @@
+{
+  "name": "tholus-flow-lite",
+  "private": false,
+  "version": "0.1.0",
+  "description": "Beautiful open-source entrance analytics for one ESP32 + VL53L8CH doorway sensor.",
+  "author": "the usual next",
+  "homepage": "https://github.com/darioriccio/tholus-flow-lite",
+  "bugs": {
+    "url": "https://github.com/darioriccio/tholus-flow-lite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darioriccio/tholus-flow-lite.git"
+  },
+  "keywords": [
+    "esp32",
+    "vl53l8ch",
+    "people-counter",
+    "entrance-analytics",
+    "occupancy",
+    "react",
+    "vite"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "check": "npm run lint && npm run build"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "idb": "^8.0.3",
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "recharts": "^3.8.1",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.9"
+  }
+}
